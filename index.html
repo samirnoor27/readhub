@@ -1,24 +1,30 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
+  <!-- ==================== 1. الإعدادات الأساسية والترميز ==================== -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مدوّنة أفق | معرفة وتقنية وحياة</title>
-  <meta name="description" content="مدونة عربية متعددة التخصصات للمقالات والأخبار والشروحات التقنية وروابط البرامج والألعاب.">
+  <title>ReadHub | معرفة وتقنية وحياة</title>
+  <meta name="description" content="منصة عربية للمقالات والأخبار والشروحات التقنية وروابط البرامج والموارد الرقمية.">
   <meta name="theme-color" content="#176b5b">
-  <link rel="canonical" href="https://example.com/">
-  <link rel="alternate" type="application/rss+xml" title="خلاصة مدونة أفق RSS" href="rss.xml">
+  <link rel="canonical" href="https://samirnoor27.github.io/readhub/">
+  <link rel="alternate" type="application/rss+xml" title="خلاصة ReadHub RSS" href="rss.xml">
+
+  <!-- ==================== 2. البيانات الوصفية للمشاركة (Open Graph & Twitter) ==================== -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_AR">
-  <meta property="og:site_name" content="مدوّنة أفق">
-  <meta property="og:title" content="مدوّنة أفق | معرفة وتقنية وحياة">
+  <meta property="og:site_name" content="ReadHub">
+  <meta property="og:title" content="ReadHub | معرفة وتقنية وحياة">
   <meta property="og:description" content="مساحة عربية للمقالات والأخبار والتقنية والموارد الرقمية.">
-  <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://example.com/assets/og-cover.svg">
+  <meta property="og:url" content="https://samirnoor27.github.io/readhub/">
+  <meta property="og:image" content="https://samirnoor27.github.io/readhub/assets/og-cover.svg">
+  
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="مدوّنة أفق">
+  <meta name="twitter:title" content="ReadHub">
   <meta name="twitter:description" content="معرفة وتقنية وحياة في مكان واحد.">
-  <meta name="twitter:image" content="https://example.com/assets/og-cover.svg">
+  <meta name="twitter:image" content="https://samirnoor27.github.io/readhub/assets/og-cover.svg">
+
+  <!-- ==================== 3. الخطوط وملفات التنسيق والسكربتات ==================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,45 +32,84 @@
   <script src="scripts.js" defer></script>
 </head>
 <body>
+
+  <!-- ==================== 4. الترويسة وشريط التنقل الرئيسي ==================== -->
   <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="أفق، الصفحة الرئيسية"><span class="brand-mark">أ</span><span>أُفُق<span class="brand-dot">.</span><small>معرفة تتجدد</small></span></a>
+      <a class="brand" href="index.html" aria-label="ReadHub، الصفحة الرئيسية">
+        <span class="brand-mark">R</span>
+        <span>ReadHub<span class="brand-dot">.</span><small>معرفة تتجدد</small></span>
+      </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">القائمة <span aria-hidden="true">☰</span></button>
       <nav id="main-nav" class="main-nav" aria-label="التنقل الرئيسي">
-        <a class="active" href="index.html">الرئيسية</a><a href="category.html?name=تقنية">تقنية</a><a href="category.html?name=معرفة">معرفة</a><a href="links.html">البرامج والألعاب</a><a href="#about">عن المدونة</a>
+        <a class="active" href="index.html">الرئيسية</a>
+        <a href="category.html?name=تقنية">تقنية</a>
+        <a href="category.html?name=معرفة">معرفة</a>
+        <a href="links.html">البرامج والألعاب</a>
+        <a href="#about">عن المنصة</a>
       </nav>
       <a class="header-cta" href="#latest">اكتشف المقالات <span aria-hidden="true">←</span></a>
     </div>
   </header>
 
   <main id="main">
+    <!-- ==================== 5. قسم الواجهة البصرية (Hero Section) ==================== -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> مجلة رقمية عربية</p>
           <h1>أفكار جديدة،<br><span>وأفق أوسع.</span></h1>
           <p class="hero-lead">مقالات مبسطة، أخبار مختارة، شروحات تقنية وموارد رقمية تساعدك على التعلّم واكتشاف ما هو جديد.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#latest">تصفّح المقالات <span aria-hidden="true">←</span></a><a class="button button-quiet" href="links.html">مكتبة الموارد</a></div>
-          <div class="hero-proof"><span class="proof-icon" aria-hidden="true">✦</span><span>محتوى عربي واضح ومفيد، بعيدًا عن التعقيد.</span></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#latest">تصفّح المقالات <span aria-hidden="true">←</span></a>
+            <a class="button button-quiet" href="links.html">مكتبة الموارد</a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-icon" aria-hidden="true">✦</span>
+            <span>محتوى عربي واضح ومفيد، بعيدًا عن التعقيد.</span>
+          </div>
         </div>
         <div class="hero-art" aria-label="رسم زخرفي تجريدي" role="img">
-          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-sun"></div>
-          <div class="art-card card-top"><span>فكرة اليوم</span><strong>تعلّم شيئًا<br>كل يوم</strong></div>
-          <div class="art-card card-bottom"><span class="mini-spark">✳</span><div><strong>فضولك هو البداية</strong><small>اقرأ · جرّب · اكتشف</small></div></div>
-          <span class="art-star star-one">✳</span><span class="art-star star-two">✦</span>
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-card card-top">
+            <span>فكرة اليوم</span>
+            <strong>تعلّم شيئًا<br>كل يوم</strong>
+          </div>
+          <div class="art-card card-bottom">
+            <span class="mini-spark">✳</span>
+            <div>
+              <strong>فضولك هو البداية</strong>
+              <small>اقرأ · جرّب · اكتشف</small>
+            </div>
+          </div>
+          <span class="art-star star-one">✳</span>
+          <span class="art-star star-two">✦</span>
         </div>
       </div>
     </section>
 
+    <!-- ==================== 6. قسم المحتوى الرئيسي والمنشورات ==================== -->
     <section class="container content-layout" id="latest">
       <div class="main-column">
-        <div class="section-heading"><div><p class="eyebrow">من دفتر أفق</p><h2>أحدث المنشورات</h2></div><span class="section-note">محتوى يتجدد باستمرار</span></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">من دفتر ReadHub</p>
+            <h2>أحدث المنشورات</h2>
+          </div>
+          <span class="section-note">محتوى يتجدد باستمرار</span>
+        </div>
+
+        <!-- أداء البحث والتصفية -->
         <form class="search-bar" role="search" id="search-form">
-          <label class="sr-only" for="site-search">ابحث في المنشورات</label><span aria-hidden="true">⌕</span>
+          <label class="sr-only" for="site-search">ابحث في المنشورات</label>
+          <span aria-hidden="true">⌕</span>
           <input id="site-search" type="search" placeholder="ابحث عن مقال أو موضوع..." autocomplete="off">
           <button type="submit">بحث</button>
         </form>
+
         <div class="filter-row" aria-label="تصفية المنشورات">
           <button class="filter-chip selected" data-filter="الكل" type="button" aria-pressed="true">الكل</button>
           <button class="filter-chip" data-filter="تقنية" type="button" aria-pressed="false">تقنية</button>
@@ -72,41 +117,214 @@
           <button class="filter-chip" data-filter="إنتاجية" type="button" aria-pressed="false">إنتاجية</button>
           <button class="filter-chip" data-filter="أخبار" type="button" aria-pressed="false">أخبار</button>
         </div>
+        
         <p id="results-status" class="results-status" aria-live="polite"></p>
+
+        <!-- شبكة عرض المقالات (post-grid) -->
         <div class="post-grid" id="post-grid">
+
+          <!-- المقال الأول (الجديد) -->
+          <article class="post-card" data-category="تقنية" data-tags="ذكاء اصطناعي تقنية أجهزة ذكية">
+            <a class="post-image" href="article-6.html" aria-label="اقرأ مقال الذكاء الاصطناعي والأجهزة الذكية" style="padding:0;">
+              <img src="assets/ai-devices.jpg" alt="الذكاء الاصطناعي والأجهزة الذكية" style="width:100%; height:100%; object-fit:cover;">
+              <span class="image-label">تقنية حديثة</span>
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <span>تقنية</span>
+                <time datetime="2026-10-13">13 أكتوبر 2026</time>
+              </div>
+              <h3><a href="article-6.html">الذكاء الاصطناعي والعمل المباشر داخل الأجهزة الذكية</a></h3>
+              <p>يتجه الذكاء الاصطناعي للعمل المباشر داخل الأجهزة اليومية دون الاعتماد على السحابة.</p>
+              <div class="post-footer">
+                <span>4 دقائق قراءة</span>
+                <a href="article-6.html">اقرأ المزيد ←</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- المقال الثاني -->
           <article class="post-card" data-category="تقنية" data-tags="أمان إنترنت كلمات المرور">
-            <a class="post-image image-green" href="article-1.html" aria-label="اقرأ مقال حماية حساباتك"><span class="image-symbol" aria-hidden="true">⌑</span><span class="image-label">دليل عملي</span></a>
-            <div class="post-body"><div class="post-meta"><span>تقنية</span><time datetime="2026-10-08">8 أكتوبر 2026</time></div><h3><a href="article-1.html">خطوات بسيطة لحماية حساباتك على الإنترنت</a></h3><p>عادات عملية تساعدك على تقوية كلمات المرور وتقليل مخاطر الوصول غير المصرّح به.</p><div class="post-footer"><span>5 دقائق قراءة</span><a href="article-1.html" aria-label="اقرأ المزيد: حماية حساباتك">اقرأ المزيد ←</a></div></div>
+            <a class="post-image image-green" href="article-1.html" aria-label="اقرأ مقال حماية حساباتك">
+              <span class="image-symbol" aria-hidden="true">⌑</span>
+              <span class="image-label">دليل عملي</span>
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <span>تقنية</span>
+                <time datetime="2026-10-08">8 أكتوبر 2026</time>
+              </div>
+              <h3><a href="article-1.html">خطوات بسيطة لحماية حساباتك على الإنترنت</a></h3>
+              <p>عادات عملية تساعدك على تقوية كلمات المرور وتقليل مخاطر الوصول غير المصرّح به.</p>
+              <div class="post-footer">
+                <span>5 دقائق قراءة</span>
+                <a href="article-1.html" aria-label="اقرأ المزيد: حماية حساباتك">اقرأ المزيد ←</a>
+              </div>
+            </div>
           </article>
+
+          <!-- المقال الثالث -->
           <article class="post-card" data-category="إنتاجية" data-tags="تنظيم وقت تركيز عمل">
-            <a class="post-image image-peach" href="article-2.html" aria-label="اقرأ مقال تنظيم الوقت"><span class="image-symbol" aria-hidden="true">◷</span><span class="image-label">إنتاجية</span></a>
-            <div class="post-body"><div class="post-meta"><span>إنتاجية</span><time datetime="2026-10-05">5 أكتوبر 2026</time></div><h3><a href="article-2.html">كيف تنظّم يومك دون جدول مزدحم؟</a></h3><p>طريقة مرنة لتحديد الأولويات وتقسيم المهام مع ترك مساحة للراحة والطوارئ.</p><div class="post-footer"><span>4 دقائق قراءة</span><a href="article-2.html">اقرأ المزيد ←</a></div></div>
+            <a class="post-image image-peach" href="article-2.html" aria-label="اقرأ مقال تنظيم الوقت">
+              <span class="image-symbol" aria-hidden="true">◷</span>
+              <span class="image-label">إنتاجية</span>
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <span>إنتاجية</span>
+                <time datetime="2026-10-05">5 أكتوبر 2026</time>
+              </div>
+              <h3><a href="article-2.html">كيف تنظّم يومك دون جدول مزدحم؟</a></h3>
+              <p>طريقة مرنة لتحديد الأولويات وتقسيم المهام مع ترك مساحة للراحة والطوارئ.</p>
+              <div class="post-footer">
+                <span>4 دقائق قراءة</span>
+                <a href="article-2.html">اقرأ المزيد ←</a>
+              </div>
+            </div>
           </article>
+
+          <!-- المقال الرابع -->
           <article class="post-card" data-category="معرفة" data-tags="تعلم قراءة معرفة">
-            <a class="post-image image-blue" href="article-3.html" aria-label="اقرأ مقال التعلم المستمر"><span class="image-symbol" aria-hidden="true">✳</span><span class="image-label">تعلّم</span></a>
-            <div class="post-body"><div class="post-meta"><span>معرفة</span><time datetime="2026-10-02">2 أكتوبر 2026</time></div><h3><a href="article-3.html">التعلّم المستمر: عادة صغيرة بنتائج كبيرة</a></h3><p>ابدأ بخطوات قصيرة قابلة للاستمرار بدل انتظار الوقت المثالي أو الحافز الكامل.</p><div class="post-footer"><span>3 دقائق قراءة</span><a href="article-3.html">اقرأ المزيد ←</a></div></div>
+            <a class="post-image image-blue" href="article-3.html" aria-label="اقرأ مقال التعلم المستمر">
+              <span class="image-symbol" aria-hidden="true">✳</span>
+              <span class="image-label">تعلّم</span>
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <span>معرفة</span>
+                <time datetime="2026-10-02">2 أكتوبر 2026</time>
+              </div>
+              <h3><a href="article-3.html">التعلّم المستمر: عادة صغيرة بنتائج كبيرة</a></h3>
+              <p>ابدأ بخطوات قصيرة قابلة للاستمرار بدل انتظار الوقت المثالي أو الحافز الكامل.</p>
+              <div class="post-footer">
+                <span>3 دقائق قراءة</span>
+                <a href="article-3.html">اقرأ المزيد ←</a>
+              </div>
+            </div>
           </article>
+
+          <!-- المقال الخامس -->
           <article class="post-card" data-category="أخبار" data-tags="تقنية ذكاء اصطناعي أخبار">
-            <a class="post-image image-lilac" href="article-4.html" aria-label="اقرأ مقال متابعة الأخبار التقنية"><span class="image-symbol" aria-hidden="true">◎</span><span class="image-label">رصد وتحليل</span></a>
-            <div class="post-body"><div class="post-meta"><span>أخبار</span><time datetime="2026-09-28">28 سبتمبر 2026</time></div><h3><a href="article-4.html">كيف تتابع الأخبار التقنية دون ضجيج؟</a></h3><p>قواعد بسيطة للتحقق من المصدر والتاريخ والتمييز بين الخبر والتحليل والإعلان.</p><div class="post-footer"><span>4 دقائق قراءة</span><a href="article-4.html">اقرأ المزيد ←</a></div></div>
+            <a class="post-image image-lilac" href="article-4.html" aria-label="اقرأ مقال متابعة الأخبار التقنية">
+              <span class="image-symbol" aria-hidden="true">◎</span>
+              <span class="image-label">رصد وتحليل</span>
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <span>أخبار</span>
+                <time datetime="2026-09-28">28 سبتمبر 2026</time>
+              </div>
+              <h3><a href="article-4.html">كيف تتابع الأخبار التقنية دون ضجيج؟</a></h3>
+              <p>قواعد بسيطة للتحقق من المصدر والتاريخ والتمييز بين الخبر والتحليل والإعلان.</p>
+              <div class="post-footer">
+                <span>4 دقائق قراءة</span>
+                <a href="article-4.html">اقرأ المزيد ←</a>
+              </div>
+            </div>
           </article>
+
+          <!-- المقال السادس -->
           <article class="post-card" data-category="تقنية" data-tags="برامج ألعاب تحميل أمان">
-            <a class="post-image image-yellow" href="article-5.html" aria-label="اقرأ مقال تحميل البرامج بأمان"><span class="image-symbol" aria-hidden="true">↓</span><span class="image-label">سلامة رقمية</span></a>
-            <div class="post-body"><div class="post-meta"><span>تقنية</span><time datetime="2026-09-24">24 سبتمبر 2026</time></div><h3><a href="article-5.html">قبل تحميل برنامج أو لعبة: قائمة تحقق سريعة</a></h3><p>تحقّق من المصدر والصلاحيات ومتطلبات التشغيل قبل تثبيت أي ملف على جهازك.</p><div class="post-footer"><span>5 دقائق قراءة</span><a href="article-5.html">اقرأ المزيد ←</a></div></div>
+            <a class="post-image image-yellow" href="article-5.html" aria-label="اقرأ مقال تحميل البرامج بأمان">
+              <span class="image-symbol" aria-hidden="true">↓</span>
+              <span class="image-label">سلامة رقمية</span>
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <span>تقنية</span>
+                <time datetime="2026-09-24">24 سبتمبر 2026</time>
+              </div>
+              <h3><a href="article-5.html">قبل تحميل برنامج أو لعبة: قائمة تحقق سريعة</a></h3>
+              <p>تحقّق من المصدر والصلاحيات ومتطلبات التشغيل قبل تثبيت أي ملف على جهازك.</p>
+              <div class="post-footer">
+                <span>5 دقائق قراءة</span>
+                <a href="article-5.html">اقرأ المزيد ←</a>
+              </div>
+            </div>
           </article>
+
         </div>
+
+        <!-- أزرار ترقيم الصفحات وحالة النتيجة الفارغة -->
         <nav class="pagination" aria-label="ترقيم صفحات المنشورات" id="pagination"></nav>
         <p class="empty-state" id="empty-state" hidden>لم نعثر على منشورات مطابقة. جرّب كلمة بحث أو تصنيفًا آخر.</p>
       </div>
+
+      <!-- ==================== 7. الشريط الجانبي (Sidebar) ==================== -->
       <aside class="sidebar">
-        <section class="side-card about-card" id="about"><p class="eyebrow">أهلًا بك</p><h2>مساحة لكل فضولي</h2><p>أفق مدونة تجريبية متعددة التخصصات، تجمع المعرفة والتقنية وأدوات الحياة اليومية في تجربة عربية بسيطة.</p><a href="about.html" class="text-link">اعرف المزيد ←</a></section>
-        <section class="side-card"><h2>التصنيفات</h2><ul class="category-list"><li><a href="category.html?name=تقنية">التقنية <span>2</span></a></li><li><a href="category.html?name=معرفة">المعرفة <span>1</span></a></li><li><a href="category.html?name=إنتاجية">الإنتاجية <span>1</span></a></li><li><a href="category.html?name=أخبار">الأخبار <span>1</span></a></li></ul></section>
-        <section class="side-card newsletter-card"><span class="newsletter-icon" aria-hidden="true">✉</span><h2>لا تفوّت الجديد</h2><p>اشترك في الخلاصة لمتابعة المنشورات الجديدة.</p><a class="button button-primary button-full" href="rss.xml">افتح RSS</a></section>
-        <section class="side-card tags-card"><h2>وسوم شائعة</h2><div class="tag-cloud"><a href="tag.html?name=أمان">#أمان</a><a href="tag.html?name=تعلم">#تعلّم</a><a href="tag.html?name=إنترنت">#إنترنت</a><a href="tag.html?name=إنتاجية">#إنتاجية</a><a href="tag.html?name=برامج">#برامج</a></div></section>
+        <!-- نبذة عن المنصة -->
+        <section class="side-card about-card" id="about">
+          <p class="eyebrow">أهلًا بك</p>
+          <h2>مساحة لكل فضولي</h2>
+          <p>ReadHub منصة عربية متعددة التخصصات، تجمع المعرفة والتقنية وأدوات الحياة اليومية في تجربة بسيطة.</p>
+          <a href="about.html" class="text-link">اعرف المزيد ←</a>
+        </section>
+
+        <!-- التصنيفات -->
+        <section class="side-card">
+          <h2>التصنيفات</h2>
+          <ul class="category-list">
+            <li><a href="category.html?name=تقنية">التقنية <span>3</span></a></li>
+            <li><a href="category.html?name=معرفة">المعرفة <span>1</span></a></li>
+            <li><a href="category.html?name=إنتاجية">الإنتاجية <span>1</span></a></li>
+            <li><a href="category.html?name=أخبار">الأخبار <span>1</span></a></li>
+          </ul>
+        </section>
+
+        <!-- الاشتراك بالخلاصة -->
+        <section class="side-card newsletter-card">
+          <span class="newsletter-icon" aria-hidden="true">✉</span>
+          <h2>لا تفوّت الجديد</h2>
+          <p>اشترك في الخلاصة لمتابعة المنشورات الجديدة.</p>
+          <a class="button button-primary button-full" href="rss.xml">افتح RSS</a>
+        </section>
+
+        <!-- الوسوم الشائعة -->
+        <section class="side-card tags-card">
+          <h2>وسوم شائعة</h2>
+          <div class="tag-cloud">
+            <a href="tag.html?name=أمان">#أمان</a>
+            <a href="tag.html?name=تعلم">#تعلّم</a>
+            <a href="tag.html?name=إنترنت">#إنترنت</a>
+            <a href="tag.html?name=إنتاجية">#إنتاجية</a>
+            <a href="tag.html?name=برامج">#برامج</a>
+          </div>
+        </section>
       </aside>
     </section>
-    <section class="bottom-cta"><div class="container bottom-cta-inner"><div><p class="eyebrow">ابدأ من هنا</p><h2>المعرفة تصبح أقوى حين تُشارك.</h2><p>تصفّح مكتبة الروابط والموارد الرقمية التي جمعناها لك.</p></div><a href="links.html" class="button button-light">انتقل إلى مكتبة الموارد ←</a></div></section>
+
+    <!-- ==================== 8. دعوة للعمل السفلية (Call to Action) ==================== -->
+    <section class="bottom-cta">
+      <div class="container bottom-cta-inner">
+        <div>
+          <p class="eyebrow">ابدأ من هنا</p>
+          <h2>المعرفة تصبح أقوى حين تُشارك.</h2>
+          <p>تصفّح مكتبة الروابط والموارد الرقمية التي جمعناها لك.</p>
+        </div>
+        <a href="links.html" class="button button-light">انتقل إلى مكتبة الموارد ←</a>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-top"><a class="brand brand-footer" href="index.html"><span class="brand-mark">أ</span><span>أُفُق<span class="brand-dot">.</span><small>معرفة تتجدد</small></span></a><p>محتوى عربي يفتح نوافذ جديدة.</p><nav aria-label="روابط التذييل"><a href="about.html">عن المدونة</a><a href="links.html">الموارد</a><a href="rss.xml">RSS</a></nav></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> مدوّنة أفق. جميع الحقوق محفوظة.</span><span>صُنع بعناية للقراءة من اليمين إلى اليسار.</span></div></footer>
+
+  <!-- ==================== 9. تذييل الصفحة (Footer) ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark">R</span>
+        <span>ReadHub<span class="brand-dot">.</span><small>معرفة تتجدد</small></span>
+      </a>
+      <p>محتوى عربي يفتح نوافذ جديدة.</p>
+      <nav aria-label="روابط التذييل">
+        <a href="about.html">عن المنصة</a>
+        <a href="links.html">الموارد</a>
+        <a href="rss.xml">RSS</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="current-year">2026</span> منصة ReadHub. جميع الحقوق محفوظة.</span>
+      <span>صُنع بعناية للقراءة من اليمين إلى اليسار.</span>
+    </div>
+  </footer>
+
 </body>
 </html>
