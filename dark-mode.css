@@ -1,0 +1,101 @@
+/* Dark mode overrides for ReadHub
+   This file adds a .dark-theme class which flips key colors and overrides
+   card/background/border styles where the main stylesheet uses hard-coded
+   light colors.
+*/
+:root{
+  --dm-paper:#0b1220;
+  --dm-ink:#e6eef8;
+  --dm-muted:#9aa6b2;
+  --dm-green:#60a5fa;
+  --dm-line:#1f2a36;
+  --dm-card:#0f1a26;
+  --dm-soft:#111920;
+}
+
+/* Apply base text/background when dark theme enabled */
+body.dark-theme{
+  background:var(--dm-paper) !important;
+  color:var(--dm-ink) !important;
+}
+
+/* Header and navigation */
+body.dark-theme .site-header{
+  background:rgba(8,12,18,.85) !important;
+  border-bottom:1px solid rgba(255,255,255,.06) !important;
+}
+
+body.dark-theme .header-inner a.brand,
+body.dark-theme .main-nav a,
+body.dark-theme .site-footer a{
+  color:var(--dm-ink) !important;
+}
+
+/* Cards, panels, hero */
+body.dark-theme .post-card,
+body.dark-theme .side-card,
+body.dark-theme .newsletter-card,
+body.dark-theme .bottom-cta,
+body.dark-theme .hero,
+body.dark-theme .inner-hero{
+  background:var(--dm-card) !important;
+  color:var(--dm-ink) !important;
+  border-color:rgba(255,255,255,.04) !important;
+}
+
+/* Post image labels and symbols */
+body.dark-theme .image-label,
+body.dark-theme .image-symbol,
+body.dark-theme .post-meta span{
+  color:var(--dm-muted) !important;
+}
+
+/* Links and buttons */
+body.dark-theme a,
+body.dark-theme .text-link{
+  color:var(--dm-ink) !important;
+}
+
+body.dark-theme .button-primary{
+  background:var(--dm-green) !important;
+  color:#072033 !important;
+  border-color:transparent !important;
+}
+
+body.dark-theme .button-quiet,
+body.dark-theme .button-light{
+  background:transparent !important;
+  color:var(--dm-ink) !important;
+  border-color:rgba(255,255,255,.04) !important;
+}
+
+/* Tag cloud / sidebar links */
+body.dark-theme .tag-cloud a,
+body.dark-theme .category-list a{
+  background:rgba(255,255,255,.03);
+  color:var(--dm-ink);
+  border-radius:10px;
+  padding:6px 8px;
+}
+
+/* Post images: slight lift in contrast for dark */
+body.dark-theme .post-image img{
+  filter:contrast(1.02) saturate(.95);
+}
+
+/* Theme toggle button appearance */
+.theme-toggle{
+  transition:transform .15s ease, background .15s ease, border-color .15s ease;
+}
+
+body.dark-theme .theme-toggle{
+  border-color:rgba(255,255,255,.06) !important;
+  color:var(--dm-ink) !important;
+}
+
+/* Footer */
+body.dark-theme .site-footer{
+  background:transparent;
+  color:var(--dm-ink) !important;
+  border-top:1px solid rgba(255,255,255,.04);
+}
