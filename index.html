@@ -29,7 +29,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- ملف أنماط الوضع الليلي (مضاف) -->
+  <link rel="stylesheet" href="dark-mode.css">
   <script src="scripts.js" defer></script>
+  <!-- ملف جافاسكربت الوضع الليلي (مضاف) -->
+  <script src="dark-mode.js" defer></script>
 </head>
 <body>
 
@@ -49,6 +53,13 @@
         <a href="links.html">البرامج والألعاب</a>
         <a href="#about">عن المنصة</a>
       </nav>
+
+      <!-- زر تبديل الوضع الليلي -->
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="تفعيل الوضع الليلي" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="theme-text">ليلي</span>
+      </button>
+
       <a class="header-cta" href="#latest">اكتشف المقالات <span aria-hidden="true">←</span></a>
     </div>
   </header>
@@ -60,7 +71,7 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> مجلة رقمية عربية</p>
           <h1>أفكار جديدة،<br><span>وأفق أوسع.</span></h1>
-          <p class="hero-lead">مقالات مبسطة، أخبار مختارة، شروحات تقنية وموارد رقمية تساعدك على التعلّم واكتشاف ما هو جديد.</p>
+          <p class="hero-lead">مقالات مبسطة، أخبار مختارة، شروحات تقنية وموارد رقمية تساعدك على التعلّم واكتشاف ما هو جد�[...]</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#latest">تصفّح المقالات <span aria-hidden="true">←</span></a>
             <a class="button button-quiet" href="links.html">مكتبة الموارد</a>
